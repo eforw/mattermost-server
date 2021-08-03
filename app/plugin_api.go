@@ -868,6 +868,7 @@ func (api *PluginAPI) KVDeleteAll() *model.AppError {
 }
 
 func (api *PluginAPI) KVList(page, perPage int) ([]string, *model.AppError) {
+	panic("from here")
 	return api.app.ListPluginKeys(api.id, page, perPage)
 }
 
