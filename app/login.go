@@ -119,6 +119,7 @@ func (a *App) AuthenticateUserForLogin(c *request.Context, id, loginId, password
 	return user, nil
 }
 
+//edit here to add user directly
 func (a *App) GetUserForLogin(id, loginId string) (*model.User, *model.AppError) {
 	enableUsername := *a.Config().EmailSettings.EnableSignInWithUsername
 	enableEmail := *a.Config().EmailSettings.EnableSignInWithEmail
